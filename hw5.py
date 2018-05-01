@@ -45,12 +45,12 @@ def main(filename):
         writer.writerows(counter.most_common())
 
     # dump to a json file named "wordcount.json"
-    json.dump(counter.most_common(), open('word_count.json', 'w'))
+    json.dump(counter.most_common(), open('wordcount.json', 'w'))
 
 
     # BONUS: dump to a pickle file named "wordcount.pkl"
     # hint: dump the Counter object directly
-    pickle.dump(counter.most_common(), open('word_count.pkl', 'wb'))
+    pickle.dump(counter.most_common(), open('wordcount.pkl', 'wb'))
 
 if __name__ == '__main__':
     main("i_have_a_dream.txt")
